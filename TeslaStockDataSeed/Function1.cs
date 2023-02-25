@@ -71,11 +71,11 @@ namespace TeslaStockDataSeed
                     PartitionKey = "partition key",
                     RowKey = i.ToString(),
                     Date = DateTime.Parse(values[0]),
-                    Open = float.Parse(values[1]),
-                    High = float.Parse(values[2]),
-                    Low = float.Parse(values[3]),
-                    Close = float.Parse(values[4]),
-                    Adj_Close = float.Parse(values[5]),
+                    Open = double.Parse(values[1]),
+                    High = double.Parse(values[2]),
+                    Low = double.Parse(values[3]),
+                    Close = double.Parse(values[4]),
+                    Adj_Close = double.Parse(values[5]),
                     Volume = int.Parse(values[6]),
                 };
 
@@ -91,11 +91,11 @@ namespace TeslaStockDataSeed
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public float Open { get; set; }
-        public float High { get; set; }
-        public float Low { get; set; }
-        public float Close { get; set; }
-        public float Adj_Close { get; set; }
+        public double Open { get; set; }
+        public double High { get; set; }
+        public double Low { get; set; }
+        public double Close { get; set; }
+        public double Adj_Close { get; set; }
         public int Volume { get; set; }
 
     }
